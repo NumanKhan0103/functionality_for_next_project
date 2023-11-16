@@ -70,6 +70,7 @@ In the above code, we are creating a lock with the name {$account->id}:payment:s
 The error message is optional, you can just redirect the user back to the form without any message but for the sake of this example, we are showing an error message.
 
 🎉🎉🎉🎉🎉🎉 That’s it! we have now implemented atomic locks to prevent duplicate form submissions.🎉🎉🎉🎉🎉🎉
+For More info  https://daryllegion.com/preventing-duplicate-form-submissions-using-atomic-locks
 
 
 
