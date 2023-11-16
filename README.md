@@ -78,7 +78,32 @@ For More info  https://daryllegion.com/preventing-duplicate-form-submissions-usi
 
 
 
+# Laravel Hashing For Strong Passwords 
+## Adjusting The Bcrypt Work Factor
+If you are using the Bcrypt algorithm, the make method allows you to manage the work factor of the algorithm using the rounds option; however, the default work factor managed by Laravel is acceptable for most applications:
+
+```
+$hashed = Hash::make('password', ['rounds' => 12,]);
+```
+
+## Adjusting The Argon2 Work Factor
+If you are using the Argon2 algorithm, the make method allows you to manage the work factor of the algorithm using the memory, time, and threads options; however, the default values managed by Laravel are acceptable for most applications:
+```
+$hashed = Hash::make('password', ['memory' => 1024, 'time' => 2, 'threads' => 2]);
+
+```
+
+
+```
+if (Hash::needsRehash($hashed)) {
+    $hashed = Hash::make('plain-text');
+}
+```
+
 ## Title 
+## Title 
+## Title 
+ 
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
