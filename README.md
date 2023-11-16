@@ -93,7 +93,7 @@ $hashed = Hash::make('password', ['memory' => 1024, 'time' => 2, 'threads' => 2]
 
 ```
 
-
+Check if a password needs rehashing with Hash::needsRehash during authentication.
 ```
 if (Hash::needsRehash($hashed)) {
     $hashed = Hash::make('plain-text');
