@@ -7,14 +7,6 @@
 code with out lock 
 
 ```bash
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Models\Account;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
-
 class SendPaymentController
 {
     public function __invoke(Request $request)
