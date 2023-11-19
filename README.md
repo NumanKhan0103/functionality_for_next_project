@@ -100,6 +100,11 @@ if (Hash::needsRehash($hashed)) {
 }
 ```
 
+weekly backup of the data base 
+get the code backup file every month with git command that numan use it
+
+
+
 ## Title 
 ## Title 
 ## Title 
